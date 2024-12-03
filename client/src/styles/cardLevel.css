@@ -1,0 +1,80 @@
+.principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 10vh; /* Updated: min-height instead of height */
+  background-color: #f0f0f0;
+}
+
+.card-level {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  background-color: #000; /* Updated: background color changed */
+  padding: 2rem; /* Updated: padding changed */
+  border-radius: 0.5rem; /* Updated: border-radius changed */
+  width: 100%; /* Updated: width changed */
+  max-width: 30rem; /* Updated: max-width changed */
+}
+
+.gauge {
+  width: 45%;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #3498db;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.gauge-body {
+  width: 200px;
+  height: 100px;
+  background-color: #e0e0e0;
+  margin: 0 auto;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+  position: relative;
+  overflow: hidden;
+}
+
+.gauge-fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #3498db;
+  transition: height 0.5s ease-out;
+}
+
+.gauge-cover {
+  width: 180px;
+  height: 90px;
+  background-color: white;
+  border-top-left-radius: 90px;
+  border-top-right-radius: 90px;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+/* .gauge-needle {
+  width: 2px;
+  height: 65px;
+  background-color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform-origin: bottom;
+  transition: transform 0.5s ease-out;
+} */
+
+.gauge-value {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #2f89ff6e;
+}
